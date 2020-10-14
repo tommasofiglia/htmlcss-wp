@@ -1,0 +1,209 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* utility classes */
+.float_right{
+  float: right;
+}
+
+.float_left{
+  float: left;
+}
+/* fine utility classes */
+
+body{
+  background-image: url('../img/sfondo.png');
+}
+#container{
+  width: 950px;
+  margin: auto;
+}
+
+p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+/* Inizio css relativo a header e navbar */
+header{
+  width: 950px;
+  height: 350px;
+  margin-top: 10px;
+  background-image: url('../img/header_image.jpg');
+  background-size: cover;
+  border: 10px solid white;
+  position: relative;
+}
+
+.header_content{
+  width: 950px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+#logo{
+  width: 45%;
+}
+
+nav{
+  height: 47px;
+  background-color: #504741;
+  margin-bottom: 12px;
+  text-align: center;
+  line-height: 45px;
+}
+
+nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+nav a{
+  vertical-align: middle;
+  line-height: 45px;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  padding: 0 12px;
+}
+
+nav li:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+  text-decoration: underline;
+}
+/* Fine css relativo a header e navbar */
+
+/* Struttura della parte centrale */
+.central_part_container::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.aside_left , .aside_right{
+  width: 20%;
+}
+
+main{
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* Fine della struttura della parte centrale */
+
+/* colonna sinistra */
+.aside_left::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#organic{
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.aside_left > i{
+  color: orange;
+  display: inline-block;
+  font-size: 2em;
+  float: left;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+
+}
+
+aside li{
+  margin-bottom: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+  list-style: none;
+}
+
+aside a{
+  color: #2f9c4a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+aside a:hover{
+  background-color: lightgrey;
+  text-decoration: underline;
+}
+/* /colonna sinistra */
+
+/* colonna centrale */
+#three_column {
+  padding: 4% 0 8% 4%;
+  text-shadow: 2px 2px lightgrey;
+}
+
+#main_p{
+  padding: 0 20px 20px 20px;
+}
+/* /colonna centrale */
+
+/* colonna destra */
+#title_tw{
+  padding: 17px 0 17px 17px;
+}
+
+.text_widget{
+  margin-bottom: 25px;
+}
+
+.p_example{
+  padding: 15px 17px 10px 17px;
+}
+/* fine colonna destra */
+
+.main , .text_widget , .aside_left , .footer{
+  background-color: white;
+  border-radius: 4px;
+}
+
+/* Inizio Footer */
+.footer{
+  width: 950px;
+  height: 140px;
+  margin-bottom: 10px;
+  color: lightgrey;
+  text-align: center;
+  font-size: 18px;
+}
+#realizzato_da{
+  padding: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.icons{
+  font-size: 60px;
+  top: 15%;
+  height: 100%;
+}
+
+.att_foot{
+  padding-top: 20px;
+  float: left;
+  color: lightgrey;
+  width: 33%;
+}
+
+.att_foot:hover{
+  color: blue;
+}
+/* Fine Footer */
